@@ -203,6 +203,7 @@ h1 {
   margin-bottom: 22px;
   font-size: clamp(44px, 5.1vw, 70px);
   line-height: 1.08;
+  text-wrap: balance;
 }
 
 .hero-intro {
@@ -264,7 +265,6 @@ h1 {
 .highlight {
   display: flex;
   min-height: 74px;
-  gap: 12px;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -272,12 +272,6 @@ h1 {
 
 .highlight + .highlight {
   border-left: 1px solid var(--line);
-}
-
-.sparkle-icon {
-  width: 16px;
-  height: 16px;
-  fill: var(--terracotta);
 }
 
 .section-heading {
@@ -510,16 +504,6 @@ h2 {
 
 .directions-link {
   min-height: 34px;
-}
-
-.external-icon {
-  width: 15px;
-  height: 15px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
 }
 
 .map-placeholder {
