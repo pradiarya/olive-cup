@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FAF7F0">
+    <meta name="description" content="Olive Cup Cafe is your neighborhood spot for good food, good coffee, and good company in Portland, Oregon.">
+    <title>Olive Cup Cafe | Good food, good coffee, good company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#home" aria-label="Olive Cup Cafe home">Olive Cup</a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+        <p class="mobile-nav-note">A little neighborhood goodness, every day.</p>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero content-width" id="home" aria-labelledby="hero-title">
+        <div class="hero-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=85" alt="Fresh coffee and pastries on a cafe table in the morning">
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Neighborhood cafe</p>
+          <h1 id="hero-title">Good food, good coffee, good company.</h1>
+          <p class="hero-intro">A cozy corner for your morning ritual, a long lunch, or one more cup with a friend.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">See the menu</a>
+            <a class="text-link" href="#visit">Find us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights content-width" aria-label="What makes us special">
+        <div class="highlight">
+          <svg class="sparkle-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.8 14 10l7.2 2-7.2 2-2 7.2L10 14l-7.2-2L10 10l2-7.2Z" />
+          </svg>
+          <span>Fresh pastries daily</span>
+        </div>
+        <div class="highlight">
+          <svg class="sparkle-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.8 14 10l7.2 2-7.2 2-2 7.2L10 14l-7.2-2L10 10l2-7.2Z" />
+          </svg>
+          <span>Locally roasted beans</span>
+        </div>
+        <div class="highlight">
+          <svg class="sparkle-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.8 14 10l7.2 2-7.2 2-2 7.2L10 14l-7.2-2L10 10l2-7.2Z" />
+          </svg>
+          <span>Open 7 days</span>
+        </div>
+      </section>
+
+      <section class="menu-section section-space" id="menu" aria-labelledby="menu-title">
+        <div class="content-width">
+          <div class="section-heading">
+            <p class="eyebrow">Made with care</p>
+            <h2 id="menu-title">Our Menu</h2>
+            <p>Good things, made fresh and served all day.</p>
+          </div>
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button class="menu-tab" id="tab-coffee" type="button" role="tab" aria-selected="true" aria-controls="panel-coffee" tabindex="0">Coffee</button>
+            <button class="menu-tab" id="tab-tea" type="button" role="tab" aria-selected="false" aria-controls="panel-tea" tabindex="-1">Tea</button>
+            <button class="menu-tab" id="tab-food" type="button" role="tab" aria-selected="false" aria-controls="panel-food" tabindex="-1">Food</button>
+          </div>
+
+          <div class="menu-panel" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee">
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-heading"><h3>House espresso</h3><span class="leader"></span><span class="price">$3.50</span></div><p>Chocolate, caramel, and a little citrus.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Americano</h3><span class="leader"></span><span class="price">$4.00</span></div><p>Espresso softened with hot water.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Flat white</h3><span class="leader"></span><span class="price">$4.75</span></div><p>Double espresso with silky steamed milk.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Honey oat latte</h3><span class="leader"></span><span class="price">$5.50</span></div><p>Our espresso, oat milk, and local honey.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Maple cold brew</h3><span class="leader"></span><span class="price">$5.25</span></div><p>Slow-steeped coffee with a maple finish.</p></li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="panel-tea" role="tabpanel" aria-labelledby="tab-tea" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-heading"><h3>Breakfast blend</h3><span class="leader"></span><span class="price">$3.75</span></div><p>A bright, comforting cup to start the day.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Earl Grey</h3><span class="leader"></span><span class="price">$4.00</span></div><p>Black tea with fragrant bergamot.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Jasmine green</h3><span class="leader"></span><span class="price">$4.00</span></div><p>Delicate green tea scented with jasmine.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Mint garden</h3><span class="leader"></span><span class="price">$3.75</span></div><p>A refreshing, caffeine-free herbal infusion.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Chai latte</h3><span class="leader"></span><span class="price">$5.25</span></div><p>Warming spices steamed with your choice of milk.</p></li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-heading"><h3>Butter croissant</h3><span class="leader"></span><span class="price">$4.25</span></div><p>Flaky, golden, and baked fresh each morning.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Olive oil cake</h3><span class="leader"></span><span class="price">$5.50</span></div><p>Soft citrus cake with a tender crumb.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Avocado toast</h3><span class="leader"></span><span class="price">$10.50</span></div><p>Sourdough, ripe avocado, lemon, and herbs.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Garden toastie</h3><span class="leader"></span><span class="price">$11.00</span></div><p>Seasonal greens, sharp cheddar, toasted sourdough.</p></li>
+              <li class="menu-item"><div class="menu-item-heading"><h3>Granola bowl</h3><span class="leader"></span><span class="price">$8.50</span></div><p>House granola, seasonal fruit, and yogurt.</p></li>
+            </ul>
+          </div>
+          <p class="menu-note">Oat and almond milk available. Please let us know about allergies.</p>
+        </div>
+      </section>
+
+      <section class="about-section section-space content-width" id="about" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="eyebrow">A seat at our table</p>
+          <h2 id="about-title">A little place with a lot of heart.</h2>
+          <p>Olive Cup started with a simple idea: the neighborhood deserves a place that feels like yours. Somewhere to slow down, say hello, and enjoy something made with care.</p>
+          <p>We pour coffee from nearby roasters, bake in small batches, and save you a seat whenever you need one. Come as you are; we'll put the kettle on.</p>
+          <blockquote>“The best part of the day is the part we share.”</blockquote>
+        </div>
+        <div class="about-photo photo-frame">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85" alt="Barista preparing a pour-over coffee at the cafe">
+        </div>
+      </section>
+
+      <section class="gallery-section section-space content-width" aria-labelledby="gallery-title">
+        <div class="section-heading gallery-heading">
+          <p class="eyebrow">A peek inside</p>
+          <h2 id="gallery-title">Come on in</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Sunlit cafe interior with a welcoming table"></div>
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Warm wood counter and seats inside a neighborhood cafe"></div>
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Fresh pastries arranged on a bakery tray"></div>
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=800&q=80" alt="Coffee and a pastry on a cafe table"></div>
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" alt="Quiet corner table ready for a coffee break"></div>
+          <div class="gallery-photo photo-frame"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Freshly poured coffee served in a ceramic cup"></div>
+        </div>
+      </section>
+
+      <section class="visit-section section-space" id="visit" aria-labelledby="visit-title">
+        <div class="content-width">
+          <div class="section-heading visit-heading">
+            <p class="eyebrow">Your table is waiting</p>
+            <h2 id="visit-title">Come say hello.</h2>
+          </div>
+          <div class="visit-grid">
+            <div class="visit-details">
+              <div class="visit-block">
+                <h3>Opening hours</h3>
+                <table class="hours-table">
+                  <tbody>
+                    <tr><th scope="row">Monday – Friday</th><td>7:00 am – 5:00 pm</td></tr>
+                    <tr><th scope="row">Saturday</th><td>8:00 am – 5:00 pm</td></tr>
+                    <tr><th scope="row">Sunday</th><td>8:00 am – 3:00 pm</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="visit-block address-block">
+                <h3>Find us</h3>
+                <address>45 Maple Lane<br>Portland, OR 97205</address>
+                <a class="text-link directions-link" href="https://www.google.com/maps/search/?api=1&query=45+Maple+Lane%2C+Portland%2C+OR+97205" target="_blank" rel="noreferrer">
+                  Get directions
+                  <svg class="external-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="map-placeholder" role="img" aria-label="Illustrated map placeholder showing Olive Cup Cafe on Maple Lane">
+              <svg class="map-art" viewBox="0 0 700 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <path class="map-road map-road-wide" d="M-30 286 730 68"/>
+                <path class="map-road" d="M104-28 255 390"/>
+                <path class="map-road" d="M493-22 378 384"/>
+                <path class="map-road" d="M-12 106 710 270"/>
+                <path class="map-block" d="m48 43 107-32 36 100-108 31z"/>
+                <path class="map-block" d="m234 18 111 25-31 97-108-26z"/>
+                <path class="map-block" d="m502 35 112 32-34 93-109-25z"/>
+                <path class="map-block" d="m60 218 105-33 34 97-104 34z"/>
+                <path class="map-block" d="m492 220 114-30 28 101-113 30z"/>
+                <path class="map-park" d="m274 214 89-24 38 111-89 25z"/>
+                <circle class="map-pin" cx="355" cy="164" r="25"/>
+                <circle class="map-pin-dot" cx="355" cy="164" r="7"/>
+              </svg>
+              <div class="map-label"><span class="map-label-dot"></span> Olive Cup Cafe</div>
+              <span class="map-street street-one">MAPLE LANE</span>
+              <span class="map-street street-two">PINE STREET</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-width footer-inner">
+        <div class="footer-brand">
+          <a class="wordmark" href="#home">Olive Cup</a>
+          <p>A good cup and a warm welcome, every day.</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+          <p>© 2026 Olive Cup Cafe · Concept design</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
